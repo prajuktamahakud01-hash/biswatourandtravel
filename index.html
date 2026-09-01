@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="SN Travels – Premium cab booking, tour packages, and airport pickup/drop services across Odisha. Explore Puri, Konark, Bhubaneswar and more.">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDJGK8M7YD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XDJGK8M7YD');
+  </script>
+  <title>Biswa's Tour and Travels | Explore Odisha with Comfort & Trust</title>
+  <link rel="shortcut icon" href="./images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <div class="logo-icon"><img src="./images/logo.png" alt="Biswa's Tour and Travels Logo"></div>
+        Biswa's Tour and Travels
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#places">Places</a>
+        <a href="#packages">Packages</a>
+        <a href="#booking">Book Now</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+        <i class="fa-solid fa-sun"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fa-solid fa-star"></i> Odisha's Trusted Travel Partner — Biswa's Tour and
+        Travels</div>
+      <h1>Explore <span>Odisha</span> with Comfort & Trust</h1>
+      <p>Discover the land of temples, serene beaches, and rich culture. We make every journey unforgettable with
+        premium travel services.</p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Now</a>
+        <a href="#calculator" class="btn btn-outline"><i class="fa-solid fa-calculator"></i> Check Price</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="number counter" data-target="5000" data-suffix="+">0</div>
+          <div class="label">Happy Travelers</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number counter" data-target="120" data-suffix="+">0</div>
+          <div class="label">Destinations</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number counter" data-target="98" data-suffix="%">0</div>
+          <div class="label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── 3D REAL ANIMATION CAR ─── -->
+    <div class="scene-3d">
+      <div class="road-3d"></div>
+      <div class="car-3d-wrapper">
+        <div class="car-model-tag">Dzire</div>
+        <svg class="real-3d-car" viewBox="0 0 220 80" width="200" height="75">
+          <!-- Shadow -->
+          <ellipse cx="110" cy="75" rx="90" ry="5" fill="rgba(0,0,0,0.3)" class="car-shadow" />
+          <!-- Car Body Group (Bounces) -->
+          <g class="car-body">
+            <!-- Main Body -->
+            <path
+              d="M 20 50 Q 15 35 30 25 L 80 25 L 120 5 L 165 5 Q 190 5 205 25 L 215 45 L 215 55 Q 215 65 200 65 L 175 65 A 18 18 0 0 0 135 65 L 85 65 A 18 18 0 0 0 45 65 L 25 65 Q 15 65 15 55 Z"
+              fill="#ffffff" />
+            <!-- Windows -->
+            <path d="M 85 25 L 115 10 L 155 10 L 165 25 Z" fill="#131f2e" />
+            <path d="M 120 10 L 120 25" stroke="#ffffff" stroke-width="2" />
+            <!-- Door Lines -->
+            <path d="M 85 25 L 85 60 M 125 25 L 125 60 M 165 25 L 165 45" stroke="#e2e8f0" stroke-width="1.5" />
+            <!-- Headlight -->
+            <path d="M 200 35 L 215 40 L 210 50 L 195 40 Z" fill="#f0cc6b" />
+            <!-- Taillight -->
+            <path d="M 15 45 L 20 35 L 25 35 L 25 45 Z" fill="#ef4444" />
+          </g>
+          <!-- Back Wheel (Spins) -->
+          <g class="wheel back-wheel">
+            <circle cx="65" cy="65" r="16" fill="#1a2a38" />
+            <circle cx="65" cy="65" r="9" fill="#cbd5e1" />
+            <path d="M 65 56 L 65 74 M 56 65 L 74 65 M 58 58 L 72 72 M 58 72 L 72 58" stroke="#1a2a38"
+              stroke-width="2" />
+          </g>
+          <!-- Front Wheel (Spins) -->
+          <g class="wheel front-wheel">
+            <circle cx="155" cy="65" r="16" fill="#1a2a38" />
+            <circle cx="155" cy="65" r="9" fill="#cbd5e1" />
+            <path d="M 155 56 L 155 74 M 146 65 L 164 65 M 148 58 L 162 72 M 148 72 L 162 58" stroke="#1a2a38"
+              stroke-width="2" />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PLACES ─── -->
+  <section class="section places-section" id="places">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Destinations</span>
+        <h2>Top Visited Places in Odisha</h2>
+        <p>Explore the most beautiful and culturally rich destinations.</p>
+      </div>
+
+      <div class="places-controls reveal">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="place-search" placeholder="Search places...">
+        </div>
+        <div class="filter-buttons" id="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="beach">Beach</button>
+          <button class="filter-btn" data-filter="temple">Temple</button>
+          <button class="filter-btn" data-filter="hill">Hill Station</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+          <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+        </div>
+      </div>
+
+      <div class="places-grid" id="places-grid">
+        <!-- Cards will be populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img reveal">
+          <img src="./images/chilika.png" alt="Scenic Chilika Lake, Odisha">
+          <div class="about-img-badge">
+            <div class="number">10+</div>
+            <div class="label">Years of Service</div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-tag">About Us</span>
+          <h2>Your Trusted Travel Companion in Odisha</h2>
+          <p>Biswa's Tour and Travels has been providing premium travel services across the beautiful state of
+            Odisha for over a
+            decade. From the sacred Jagannath Temple in Puri to the pristine beaches of Gopalpur, we ensure every
+            journey is comfortable, safe, and memorable.</p>
+          <p>Our fleet of well-maintained vehicles and experienced drivers guarantee you a hassle-free travel experience
+            whether you're a pilgrim, tourist, or business traveler.</p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <span>100% Safe & Verified Drivers</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fa-solid fa-clock"></i></div>
+              <span>24/7 Availability & Support</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon"><i class="fa-solid fa-tags"></i></div>
+              <span>Transparent & Affordable Pricing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─── -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Our Services</span>
+        <h2>Travel Solutions for Every Need</h2>
+        <p>From local commutes to full tour packages, we've got Odisha covered.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-car-side"></i></div>
+          <h3>Cab Booking</h3>
+          <p>Book clean, comfortable cabs for city rides, outstation trips, and hourly rentals. Choose from sedans,
+            SUVs, and premium vehicles for any occasion.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+          <h3>Tour Packages</h3>
+          <p>Explore curated tour packages covering Puri, Konark, Chilika Lake, Simlipal, Daringbadi, and more.
+            Customizable itineraries for families and groups.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-plane-arrival"></i></div>
+          <h3>Airport Pickup & Drop</h3>
+          <p>Reliable airport transfer service from Bhubaneswar Airport. On-time pickups, flight tracking, and
+            meet-and-greet for a stress-free start to your trip.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PACKAGES ─── -->
+  <section class="section packages-section" id="packages">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Tour Packages</span>
+        <h2>Curated Odisha Experiences</h2>
+        <p>Choose from our specially designed tour packages for the perfect trip.</p>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card reveal">
+          <div class="package-img"><img src="./images/chilika-puri-konarak.jpg" alt="Puri-konark-chilika"></div>
+          <div class="package-content">
+            <h3>Puri-Konark-Chilika</h3>
+            <div class="package-meta">
+              <span><i class="fa-regular fa-clock"></i> 3 Days / 2 Nights</span>
+              <span class="package-price">₹8,500</span>
+            </div>
+            <ul class="package-includes">
+              <li><i class="fa-solid fa-check"></i> AC Hotel Stay</li>
+              <li><i class="fa-solid fa-check"></i> Private Cab</li>
+              <li><i class="fa-solid fa-check"></i> Breakfast & Dinner</li>
+              <li><i class="fa-solid fa-check"></i> Temple Darshan Assist</li>
+            </ul>
+            <button class="btn btn-primary btn-block" onclick="selectPackage('Puri-Konark-Chilika Package')">Book
+              Package</button>
+          </div>
+        </div>
+
+        <div class="package-card reveal">
+          <div class="package-img"><img src="images/Bhubaneswar Heritage.png" alt="Bhubaneswar"></div>
+          <div class="package-content">
+            <h3>Bhubaneswar Heritage</h3>
+            <div class="package-meta">
+              <span><i class="fa-regular fa-clock"></i> 2 Days / 1 Night</span>
+              <span class="package-price">₹4,200</span>
+            </div>
+            <ul class="package-includes">
+              <li><i class="fa-solid fa-check"></i> Premium Accommodation</li>
+              <li><i class="fa-solid fa-check"></i> Local AC Transport</li>
+              <li><i class="fa-solid fa-check"></i> All Temple Tours</li>
+              <li><i class="fa-solid fa-check"></i> Guide Included</li>
+            </ul>
+            <button class="btn btn-primary btn-block" onclick="selectPackage('Bhubaneswar Heritage Tour')">Book
+              Package</button>
+          </div>
+        </div>
+
+        <div class="package-card reveal">
+          <div class="package-img"><img src="images/Daringbadi-7-scaled.jpg" alt="Daringbadi"></div>
+          <div class="package-content">
+            <h3>Daringbadi Weekend</h3>
+            <div class="package-meta">
+              <span><i class="fa-regular fa-clock"></i> 3 Days / 2 Nights</span>
+              <span class="package-price">₹9,500</span>
+            </div>
+            <ul class="package-includes">
+              <li><i class="fa-solid fa-check"></i> Hill Resort Stay</li>
+              <li><i class="fa-solid fa-check"></i> SUV Transport</li>
+              <li><i class="fa-solid fa-check"></i> All Meals Included</li>
+              <li><i class="fa-solid fa-check"></i> Sightseeing</li>
+            </ul>
+            <button class="btn btn-primary btn-block" onclick="selectPackage('Daringbadi Weekend Tour')">Book
+              Package</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── BOOKING FORM ─── -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Book a Ride</span>
+        <h2>Reserve Your Trip Today</h2>
+        <p>Fill out the form below and our team will get back to you within minutes.</p>
+      </div>
+
+      <div class="booking-card booking-full reveal">
+        <div class="booking-split">
+          <div class="booking-image" aria-hidden="true"></div>
+          <div class="booking-form-wrap">
+            <div class="booking-inner">
+              <form id="booking-form">
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="travelers">Number of Travelers</label>
+                    <input type="number" id="travelers" name="travelers" placeholder="e.g. 4" min="1" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="place">Selected Place / Package</label>
+                    <select id="place" required name="place">
+                      <option value="" disabled selected>Select a destination</option>
+                      <option value="Puri">Puri</option>
+                      <option value="Konark Sun Temple">Konark Sun Temple</option>
+                      <option value="Chilika Lake">Chilika Lake</option>
+                      <option value="Bhubaneswar">Bhubaneswar</option>
+                      <option value="Daringbadi">Daringbadi</option>
+                      <option value="Simlipal National Park">Simlipal National Park</option>
+                      <option value="Deomali">Deomali</option>
+                      <option value="Hirakud Dam">Hirakud Dam</option>
+                      <option value="Puri-Konark-Chilika Package">Puri-Konark-Chilika Package</option>
+                      <option value="Bhubaneswar Heritage Tour">Bhubaneswar Heritage Tour</option>
+                      <option value="Daringbadi Weekend Tour">Daringbadi Weekend Tour</option>
+                      <option value="Custom">Custom Trip</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="date">Travel Date</label>
+                    <input type="date" id="date" name="date" required>
+                    <small style="color: #888; font-size: 12px;">Select today or any future date</small>
+                  </div>
+                  <div class="form-group full">
+                    <label for="message">Message / Special Request</label>
+                    <textarea id="message" name="message" rows="3"
+                      placeholder="Any specific requirements..."></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="form-submit"><i class="fa-solid fa-paper-plane"></i> Submit
+                  Booking</button>
+              </form>
+
+              <div class="form-success" id="form-success">
+                <div class="icon">✅</div>
+                <h3>Booking Submitted Successfully!</h3>
+                <p>Thank you! Our team will contact you shortly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Reviews</span>
+        <h2>What Our Travelers Say</h2>
+        <p>Real stories from our happy customers.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="testimonial-text">"Excellent service! Our family trip to Puri and Chilika was incredibly smooth. The
+            driver was polite and knew all the local spots."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul D.">
+            <div>
+              <h4>Rahul Das</h4>
+              <span>Kolkata</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="testimonial-text">"The Daringbadi weekend tour exceeded our expectations. The vehicle was in great
+            condition, and the arrangements were top notch."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Smita M.">
+            <div>
+              <h4>Smita Mohanty</h4>
+              <span>Bhubaneswar</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="testimonial-text">"Reliable airport pickup. I frequently travel to Odisha for business and Biswa's
+            Tour and Travels is my go-to choice every time."</p>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Vikram S.">
+            <div>
+              <h4>Vikram Singh</h4>
+              <span>Delhi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact Us</span>
+        <h2>Get in Touch</h2>
+        <p>Have questions? We're here to help you plan your perfect Odisha trip.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+919348354248">+91 9348354248</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:biswajitmatia222@gmail.com">
+                biswajitmatia222@gmail.com
+              </a>
+              <!-- <p>bookings@odishatravel.com</p> -->
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Office Address</h4>
+              <p>District Centre, Chandrasekharpur</p>
+              <p>Bhubaneswar, Odisha</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Mon – Sun: 24/7 Available</p>
+              <p>Office: 9 AM – 8 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=District+Centre,+Chandrasekharpur,+Bhubaneswar,+Odisha&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Biswa's Tour and Travels - District Centre, Chandrasekharpur, Bhubaneswar"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-icon"><img src="./images/logo.png" alt="Biswa's Tour and Travels Logo"></div>
+            Biswa's Tour and Travels
+          </a>
+          <p>Your most trusted travel partner in Odisha. Making every journey comfortable, affordable, and unforgettable
+            since 2014.</p>
+          <div class="footer-social">
+
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#calculator">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Cab Booking</a></li>
+            <li><a href="#services">Tour Packages</a></li>
+            <li><a href="#services">Airport Transfer</a></li>
+            <li><a href="#booking">Custom Trip</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#booking">Puri</a></li>
+            <li><a href="#booking">Konark</a></li>
+            <li><a href="#booking">Chilika Lake</a></li>
+            <li><a href="#booking">Simlipal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Biswa's Tour and Travels. All rights reserved.</p>
+        <p>Designed by <a href="https://briskodetechnology.com">Briskodetechnology Pvt Ltd</a> </p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919348354248?text=Hi Biswa's Tour and Travels, I would like to book a ride."
+    class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Book on WhatsApp</span>
+  </a>
+
+  <!-- ─── PLACE DETAILS MODAL ─── -->
+  <div class="place-modal-overlay" id="place-modal">
+    <div class="place-modal-content">
+      <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3f8eFtYPAOLrWHPP6EXp3MCnbIgOoego&libraries=places&callback=initGoogleMaps"
+    async defer></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
