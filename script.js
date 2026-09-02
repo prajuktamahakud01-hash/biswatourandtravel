@@ -501,3 +501,32 @@ window.selectPackage = function(packageName) {
     bookingSection.scrollIntoView({ behavior: 'smooth' });
   }
 };
+
+// ─── FAQ ACCORDION LOGIC ───
+document.addEventListener('DOMContentLoaded', () => {
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    if (question) {
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    }
+  });
+});
+
+// ─── GOOGLE ANALYTICS & CONVERSION EVENT TRACKING ───
+window.trackConversion = function(action, label) {
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      event_category: 'Lead',
+      event_action: action,
+      event_label: label
+    });
+  }
+};
+
