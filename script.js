@@ -26,11 +26,30 @@ hamburger.addEventListener('click', () => {
   document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
 });
 
-navAnchors.forEach(a => a.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navLinks.classList.remove('active');
-  document.body.style.overflow = '';
-}));
+// Only close mobile drawer on actual page navigation links (not dropdown toggles)
+navAnchors.forEach(a => {
+  if (!a.classList.contains('nav-dropdown-toggle')) {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navLinks.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+});
+
+// Dropdown toggle on touch/mobile devices
+document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 1024) {
+      e.preventDefault();
+      const parent = toggle.closest('.nav-dropdown');
+      if (parent) {
+        parent.classList.toggle('open');
+      }
+    }
+  });
+});
+
 
 // ─── SET MINIMUM DATE FOR BOOKING (Today + Future Only) ───
 const dateInput = document.getElementById('date');

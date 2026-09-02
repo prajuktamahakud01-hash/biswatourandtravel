@@ -43,9 +43,8 @@
   <!-- NAVBAR -->
   <nav class="navbar scrolled" id="navbar">
     <div class="container">
-      <a href="index.html" class="logo">
-        <div class="logo-icon"><img src="./images/logo.png" alt="Biswa's Tour and Travels Logo"></div>
-        Biswa's Tour and Travels
+      <a href="index.html" class="logo" aria-label="Biswa's Tour and Travels">
+        <img src="./images/logo.png" alt="Biswa's Tour and Travels Logo" class="navbar-logo-img">
       </a>
       <div class="nav-links" id="nav-links">
         <a href="index.html">Home</a>
@@ -70,14 +69,17 @@
         </div>
         <a href="index.html#popular-routes">Routes</a>
         <a href="contact.html">Contact</a>
-        <a href="tel:+919348354248" class="nav-cta"><i class="fa-solid fa-phone"></i> +91 9348354248</a>
       </div>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-        <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+
+      <div class="nav-actions">
+        <a href="tel:+919348354248" class="nav-phone-btn"><i class="fa-solid fa-phone"></i> +91 9348354248</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
