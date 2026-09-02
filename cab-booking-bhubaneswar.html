@@ -44,9 +44,18 @@
   <nav class="navbar scrolled" id="navbar">
     <div class="container">
       <a href="index.html" class="logo" aria-label="Biswa's Tour and Travels">
-        <img src="./images/logo.png" alt="Biswa's Tour and Travels Logo" class="navbar-logo-img">
+        <div class="logo-icon"><img src="./images/logo.png" alt="Biswa's Tour and Travels Emblem"></div>
       </a>
+      
       <div class="nav-links" id="nav-links">
+        <div class="mobile-nav-header">
+          <div class="mobile-nav-brand">
+            <div class="logo-icon"><img src="./images/logo.png" alt="Biswa's Tour and Travels"></div>
+            <span>Biswa's Travels</span>
+          </div>
+          <button class="nav-close-btn" aria-label="Close menu">&times;</button>
+        </div>
+
         <a href="index.html">Home</a>
         <div class="nav-dropdown">
           <a class="nav-dropdown-toggle">Cab Services <i class="fa-solid fa-chevron-down"></i></a>
@@ -69,6 +78,15 @@
         </div>
         <a href="index.html#popular-routes">Routes</a>
         <a href="contact.html">Contact</a>
+
+        <div class="mobile-nav-footer">
+          <a href="tel:+919348354248" class="mobile-drawer-btn drawer-btn-call">
+            <i class="fa-solid fa-phone"></i> Call (+91 9348354248)
+          </a>
+          <a href="https://wa.me/919348354248?text=Hello%20Biswa's%20Tour%20and%20Travels,%20I%20need%20a%20cab%20in%20Bhubaneswar." target="_blank" rel="noopener" class="mobile-drawer-btn drawer-btn-wa">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Booking
+          </a>
+        </div>
       </div>
 
       <div class="nav-actions">
@@ -82,6 +100,7 @@
       </div>
     </div>
   </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
 
   <!-- PAGE HERO -->
   <section class="page-hero">

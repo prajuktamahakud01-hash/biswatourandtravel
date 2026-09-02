@@ -15,40 +15,72 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// ─── MOBILE MENU ───
+// ─── MOBILE MENU & OVERLAY ───
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-const navAnchors = document.querySelectorAll('.nav-links a');
+const navOverlay = document.querySelector('.nav-overlay');
+const navCloseBtn = document.querySelector('.nav-close-btn');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navLinks.classList.toggle('active');
-  document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+function openMobileMenu() {
+  if (hamburger) hamburger.classList.add('active');
+  if (navLinks) navLinks.classList.add('active');
+  if (navOverlay) navOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileMenu() {
+  if (hamburger) hamburger.classList.remove('active');
+  if (navLinks) navLinks.classList.remove('active');
+  if (navOverlay) navOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+if (hamburger) {
+  hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (navLinks && navLinks.classList.contains('active')) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+}
+
+if (navOverlay) {
+  navOverlay.addEventListener('click', closeMobileMenu);
+}
+if (navCloseBtn) {
+  navCloseBtn.addEventListener('click', closeMobileMenu);
+}
+
+// Close mobile drawer when clicking regular destination links
+document.querySelectorAll('.nav-links a:not(.nav-dropdown-toggle)').forEach(a => {
+  a.addEventListener('click', () => {
+    if (window.innerWidth <= 1180) {
+      closeMobileMenu();
+    }
+  });
 });
 
-// Only close mobile drawer on actual page navigation links (not dropdown toggles)
-navAnchors.forEach(a => {
-  if (!a.classList.contains('nav-dropdown-toggle')) {
-    a.addEventListener('click', () => {
-      hamburger.classList.remove('active');
-      navLinks.classList.remove('active');
-      document.body.style.overflow = '';
-    });
-  }
-});
-
-// Dropdown toggle on touch/mobile devices
+// Dropdown accordion toggle on touch/mobile
 document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
   toggle.addEventListener('click', (e) => {
-    if (window.innerWidth <= 1024) {
+    if (window.innerWidth <= 1180) {
       e.preventDefault();
+      e.stopPropagation();
       const parent = toggle.closest('.nav-dropdown');
       if (parent) {
-        parent.classList.toggle('open');
+        // Toggle current dropdown, close other open dropdowns in drawer
+        const wasOpen = parent.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+        if (!wasOpen) {
+          parent.classList.add('open');
+        }
       }
     }
   });
 });
+
 
 
 // ─── SET MINIMUM DATE FOR BOOKING (Today + Future Only) ───
